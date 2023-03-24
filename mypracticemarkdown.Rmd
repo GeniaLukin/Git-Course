@@ -1,0 +1,31 @@
+---
+title: "My Practice Markdown"
+author: "Genia Lukin"
+date: "2023-03-24"
+output:
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+```{r cars}
+library(tidyverse)
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r plot, echo=FALSE}
+ggplot(mtcars, aes(x = mpg, y = hp, col = as.factor(cyl))) + 
+  geom_point() + 
+  geom_smooth(method = "lm")
+
+```
